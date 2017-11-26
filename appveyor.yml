@@ -76,7 +76,7 @@ before_build:
      
       cd $env:APPVEYOR_BUILD_FOLDER/Breeze.UI
 
-      Install-Product node 6
+      Install-Product node 8
       npm install
       Write-Host "$env:log_prefix FINISHED restoring dotnet and npm packages" -foregroundcolor "magenta"
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
